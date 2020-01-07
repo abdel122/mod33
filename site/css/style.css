@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+h1{
+	color: #E13FD5 
+}
+h2{
+	color: #020F23 
+}
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+.custom-color {
+	background-color:#C243EA ;
+}
+
+.navbar * {
+	color: black!important;
+}
+
+.navbar {
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	padding: 0;
+}
+
+.navbar-brand {
+	font-size: 2.5em;
+	padding: .5rem 1rem;
+	transition: .2s linear;
+}
+
+.navbar-toggler {
+	border-color: black!important;
+	margin: .5rem 1rem;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.visible-xs {
+	background: #fff;
+	text-align: center;
+	display: none!important;
+}
+
+.nav-item:hover {
+	box-shadow: 0 0 10px black;
+	transition: .2s linear;
+}
+
+/*  Button to top  */
+
+.top-button {
+	position: fixed;
+	text-align: center;
+	right: 3em;
+	bottom: 3em;
+	border:2px solid black;
+	border-radius: 50%;
+	width: 3.75em;
+	height: 3.75em;
+	overflow: hidden;
+	transition: .5s;
+	z-index: 9999;
+}
+
+.top-button:hover {
+	background-color: black;
+	border-color: gray;
+	transition:.5s;
+}
+
+.top-button i {
+	height: 100%;
+	width: 100%;
+	font-size: 1.8em;
+	color: black;
+	padding-top: .4em;
+	z-index: 9999;
+	transition:.5s;
+}
+
+.top-button i:hover {
+	color: white;
+	transition:.5s;
+}
+
+/*  End of Button to top  */
+
+.row {
+	margin:0px;
+}
+
+.row div {
+	min-height: 450px;
+	background: #C243EA ;
+}
+
+.col-xs-12 {
+	width: 80%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+	.top-button {
+		right: 2.5em;
+		bottom: 2.5em;
+		width: 3em;
+		height: 3em;
+	}
+
+	.top-button i {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width:576px) {
+	.navbar-brand {
+		font-size: 1.5em;
+	}
+	.top-button {
+		right: 1em;
+		bottom: 1em;
+		width: 2.5em;
+		height: 2.5em;
+	}
+
+	.top-button i {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.navbar-brand {
+		font-size: 1em;
+	}
+	.top-button {
+		width: 2.5em;
+		height: 2.5em;
+		right:1em;
+		bottom:1em;
+	}
+	.top-button i {
+		font-size: 1.25em;
+	}
+}
+
+
+@media screen and (max-width: 576px) {
+	.visible-xs {
+		display: block!important;
+		
+	}
+}
